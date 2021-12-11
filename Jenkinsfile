@@ -8,6 +8,7 @@ node{
     sh "${mvnHome}/bin/mvn clean install"
   }
   stage('deploy to tomcat') {
+    sh "chmod -f 777 /var/lib/jenkins/workspace/simplewebapplication/target/travel.war"
     sh "cp -r /var/lib/jenkins/workspace/simplewebapplication/target/travel.war /opt/apache-tomcat-9.0.55/webapps/"
    }
   
