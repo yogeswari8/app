@@ -8,7 +8,7 @@ node{
     sh "${mvnHome}/bin/mvn clean install"
   }
   stage('deploy to tomcat') {
-    sh "cp -r /var/lib/jenkins/workspace/simplewebapplication/target/simpleapp.war /opt/apache-tomcat-9.0.55/webapps/"
+    sh "cp -r /var/lib/jenkins/workspace/simplewebapplication/target/travel.war /opt/apache-tomcat-9.0.55/webapps/"
    }
   
 }
