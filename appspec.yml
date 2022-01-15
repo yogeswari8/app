@@ -1,0 +1,5 @@
+version: 0.0
+os: linux
+files:
+ - source: target/travel.war
+   destination: /opt/apache-tomcat-9.0.55/webapps/
